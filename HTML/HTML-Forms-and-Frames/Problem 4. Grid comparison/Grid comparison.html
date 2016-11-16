@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Grid comparison</title>
+	<style>
+		table, th, td {
+			border: 1px solid gray;
+			border-collapse: collapse;
+			border-width: 1px;
+		}
+		
+		tr.bgcolor {
+			background-color: lightgray;
+		}
+		td.remove-left-border {
+			border-left: none;
+		}
+		td.remove-right-border {
+			border-right: none;
+			text-align: right;
+		}
+		
+		td {
+			height: 25px;
+			padding: 4px;
+		}
+		
+		td.padding {
+			padding: 7px 7px 7px 7px;
+		}
+		.valign {
+			vertical-align:middle;
+		}
+		.right-align {
+			float: right;
+		}
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		a:hover 
+		{
+			color:#00A0C6; 
+			text-decoration:none; 
+			cursor:pointer;  
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<main>
+		<form>
+			<table>
+				<thead>
+					<tr class="bgcolor">
+						<td colspan="6"> Drag a column header and drop it here to group by that column.</td>
+					</tr>
+					<tr class="bgcolor">
+						<td class="padding">ProductID</td>
+						<td class="padding">Product Name</td>
+						<td class="padding">Unit Price</td>
+						<td class="padding">Quantity per unit</td>
+						<td class="padding">Units in stock</td>
+						<td class="padding">Discontinued</td>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr class="bgcolor" >
+						<td colspan="6" class="remove-left-border">
+							<img src="first.png" class="valign" alt="move to first">
+							<img src="previous.png" class="valign" alt="move to previous">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">5</a>
+							<a href="#">6</a>
+							<a href="#">7</a>
+							<a href="#">8</a>
+							<a href="#">9</a>
+							<a href="#">10</a>
+							<span>...</span>
+							<img src="next.png" class="valign" alt="move to next">
+							<img src="last.png" class="valign" alt="move to last">
+							<label for="pageSize">Page Size:</label>
+							<select name="pageSize" id="pageSize">
+								<option value="10">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+                        	</select>
+							
+							<span class="right-align">335104 items 33511 pages</span>
+						</td>
+						
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr class="bgcolor">
+						<td>
+							<input type="text" name="productID" id="productID" size="1" />
+						</td>
+						<td>
+							<input type="text" name="productName" id="productName" />
+						</td>
+						<td>
+							<input type="text" class="valign" name="unitPrice" id="unitPrice" />
+							<input type="image" class="valign"  name="filterButton " src="filterbutton.png" alt="Filter Button" />
+						</td>
+						<td>
+							<input type="text" class="valign" name="quantity" id="quantity" />
+						</td>
+						<td>
+							<input type="text" class="valign" name="unitInStock" id="unitInStock" />
+							<input type="image" class="valign" name="filterButton " src="filterbutton.png" alt="Filter Button" />
+						</td>
+						<td>
+							<input type="checkbox" class="valign" name="discontinued" value="discontinued" />
+							<input type="image" class="valign" name="filterButton " src="filterbutton.png" alt="Filter Button" />
+						</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>Chai</td>
+						<td>$18.00</td>
+						<td>10 boxes x 20 bags</td>
+						<td>39</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Chang</td>
+						<td>$19.00</td>
+						<td>24 - 12 oz bottles</td>
+						<td>17</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Aniseed Syrup</td>
+						<td>$10.00</td>
+						<td>12 - 550 ml bottles</td>
+						<td>13</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Chef Anton's Cajun Seasoning</td>
+						<td>$22.00</td>
+						<td>48 - 6 oz jars</td>
+						<td>53</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Chef Anton's Gumbo Mix</td>
+						<td>$21.35</td>
+						<td>36 boxes</td>
+						<td>0</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Grandmas's Boysenberry Spread</td>
+						<td>$25.00</td>
+						<td>12 - 8 oz jars</td>
+						<td>120</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Uncle Bob's Organic Dried Pears</td>
+						<td>$30.00</td>
+						<td>12 - 1 lb pkgs.</td>
+						<td>15</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Northwoods Cranberry Sauce</td>
+						<td>$40.00</td>
+						<td>12 - 12 oz jars</td>
+						<td>6</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Mishe Kobe Niku</td>
+						<td>$97.00</td>
+						<td>18 - 500 g pkgs.</td>
+						<td>29 </td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Ikura </td>
+						<td>$31.00</td>
+						<td>12 - 200ml jars</td>
+						<td>31</td>
+						<td>
+							<input type="checkbox" name="discontinued" value="discontinued" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>HTML tables</title>
+		<meta charset="UTF-8">
+		<style>
+			table {
+				text-align: center;
+			}
+			
+			td {
+				padding: 5px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<table  border="1px" width="250px" height="150px" >
+			<thead>
+				<tr>
+					<td colspan="3" align="left">Title goes here</td>
+					<td>A</td>
+					<td align="right">B</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="3" align="left" valign="middle">C</td>
+					<td>D</td>
+					<td>E</td>
+					<td>F</td>
+					<td align="right">G</td>
+				</tr>
+				<tr>
+					<td>H</td>
+					<td colspan="2">I</td>
+					<td rowspan="2" align="right" valign="bottom">J</td>
+				</tr>
+				<tr>
+					<td>K</td>
+					<td>L</td>
+					<td>M</td>
+				</tr>
+				<tr>
+					<td align="right">N</td>
+					<td colspan="4" align="center">O</td>
+				</tr> 
+			</tbody>
+		</table>
+	</body>
+</html>

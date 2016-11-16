@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Forms</title>
+	<style>
+		table,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px 5px 5px 5px;
+		}
+		
+		td.rightalign {
+			text-align: right;
+		}
+		
+		form.center {
+			align: center;
+		}
+		
+		input.buttons {
+			background-color: #4CAF50;
+			border: none;
+			padding: 10px 10px;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+		
+		td.center {
+			text-align: center;
+		}
+		tr.bglightblue {
+			background-color: lightblue;
+		}
+		
+		col.width150 {
+			width: 150px;
+		}
+		
+		col.width50 {
+			width: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<form name="Submit form" method="post" action="#">
+			<table>
+				<colgroup>
+					<col class="width150">
+					<col class="width50">
+					<col class="width50">
+					<col class="width50">
+
+				</colgroup>
+				<tfoot>
+					<tr class="bglightblue">
+						<td colspan="4" class="center">
+							<input type="submit" value="Submit" name="Submit" class="buttons" />
+							<input type="reset" value="Clear Form NOW!" name="Clear Form" class="buttons" />
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+
+					<tr>
+						<td class="rightalign"><strong>First Name</strong></td>
+						<td colspan="3">
+							<input type="text" name="First Name" style="width: 90%" required /> <br>
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Last Name</strong></td>
+						<td colspan="3">
+							<input type="text" name="Last Name" style="width: 90%" required />
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Address</strong></td>
+						<td colspan="3">
+							<textarea rows="4" cols="40" name="Address" style="width: 90%" required></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>City</strong></td>
+						<td class="rightalign">
+							<input type="text" name="City" maxlength="15" style="width: 190px;">
+						</td>
+						<td class="rightalign"><strong>State</strong></td>
+						<td class="rightalign">
+							<input type="text" name="State" maxlength="10" style="width:50px;">
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Zip/Postal Code</strong></td>
+						<td colspan="3">
+							<input type="text" name="zipcode" style="width: 50px" maxlength="4">
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Country</strong></td>
+						<td colspan="3">
+							<select name="Gopelandia">
+                            <option value="Gopelandia">Gopelandia</option>
+                            <option value="Gopelandia Max">Gopelandia MAX</option>
+                            <option value="Gopelandia Ultimate">Gopelandia ULTIMATE</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Phone (country code, area code, number)</strong></td>
+						<td colspan="3">
+							<input type="text" maxlength="3" style="width: 30px">
+							<input type="text" style="width: 70px"> -
+							<input type="text" style="width: 130px">
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>E-mail</strong></td>
+						<td colspan="3">
+							<input type="email" name="email" required>
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Birth date</strong></td>
+						<td colspan="3">
+							<label for="Month">Month</label>
+							<input type="text" name="Month" id="Month" maxlength="2" style="width: 25px;">
+							<label for="Day">Day</label>
+							<input type="text" id="Day" name="Day" maxlength="2" style="width: 25px;">
+							<label for="Year"> Year(4 digit)</label>
+							<input type="text" id="Year" name="Year" maxlength="4" style="width: 35px;">
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Gender</strong></td>
+						<td colspan="3">
+							<select name="Gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+						</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Starting Date</strong></td>
+						<td colspan="3">
+							<input type="radio" id="spring" name="Starting Date" value="Spring 2006" checked>
+							<label for="spring">Spring 2006</label>
+							<input type="radio" id="summer" name="Starting Date" value="Summer 2006">
+							<label for="summer">Summer 2006</label>
+						</td>
+					</tr>
+					<tr>
+						<td class="rightalign"><strong>Comments/Questions</strong></td>
+						<td colspan="3">
+							<textarea rows="6" cols="40" name="comments" style="width: 90%"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</main>
+</body>
+
+</html>
