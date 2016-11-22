@@ -1,0 +1,42 @@
+table {
+    background-color: #595959;
+    font-family: 'Arial';
+    color: #B4AC9D;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+table td {
+    padding: 7px;
+    vertical-align: top;
+}
+
+table tr td:first-child {
+    color: #ffffff;
+    font-style: italic;
+    padding-right: 20px;
+}
+
+a {
+    color: #DCCF88; 
+    text-decoration: none;
+}
+img {
+    width: 4%;
+    height: 5%;
+}
+
+#inactiveSupport {
+    font-weight: 500;
+    vertical-align: top;
+    color: #DE1720;
+}
+
+span.notAnswered {
+    color: #BF6A1F;
+}
