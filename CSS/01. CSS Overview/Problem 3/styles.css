@@ -9,10 +9,14 @@ h1 {
     text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
 a.underline {
     text-decoration: underline;
 }
-a {
+li > a {
 	text-decoration: none;
 	color: #fff;
     text-align: center;
@@ -36,5 +40,5 @@ article footer {
 }
 footer {
 	text-align: center;
-	font-size: 17px;
+	font-size: 15px;
 }
