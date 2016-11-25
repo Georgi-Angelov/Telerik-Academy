@@ -2,49 +2,94 @@
 <html>
 
 <head>
-    <title>Ticket CSS</title>
-    <link rel="stylesheet" href="Styles.css">
+    <meta charset="utf-8" />
+    <title>International Employees</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
-    <main>
-        <table>
-            <thead>
-                <tr id="grad">
-                    <th>Contact name</th>
-                    <th>City</th>
-                    <th>Country</th>
-                    <th>Is Promoted</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Maria Anders</td>
-                    <td>Berlin</td>
-                    <td><img src="german.jpg" />Germany</td>
-                    <td><input type="checkbox" name="IsPromoted" /></td>
-                </tr>
-                <tr>
-                    <td>Ana Trujillo</td>
-                    <td>México D.F.</td>
-                    <td>Mexico</td>
-                    <td><input type="checkbox" name="IsPromoted" /></td>
-                </tr>
-                <tr>
-                    <td>Antonio Moreno</td>
-                    <td>México D.F.</td>
-                    <td>Mexico/td>
-                    <td><input type="checkbox" name="IsPromoted" checked/></td>
-                </tr>
-                <tr>
-                    <td>Thomas Hardy</td>
-                    <td>London </td>
-                    <td>UK</td>
-                    <td><input type="checkbox" name="IsPromoted" /></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+    <table>
+        <colgroup>
+            <col class="firstCol">
+            <col class="secondCol">
+            <col class="thirdCol">
+            <col class="fourthCol">
+        </colgroup>
+        <thead>
+            <tr>
+                <td>
+                    Contact name
+                </td>
+                <td>
+                    City
+                </td>
+                <td>
+                    Country
+                </td>
+                <td>
+                    Is Promoted
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Maria Andres
+                </td>
+                <td>
+                    Berlin
+                </td>
+                <td class="country germany">
+                    Germany
+                </td>
+                <td>
+                    <input type="checkbox" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ana Trujullo
+                </td>
+                <td>
+                    M&eacute;xico D.F.
+                </td>
+                <td class="country mexico">
+                    Mexico
+                </td>
+                <td>
+                    <input type="checkbox" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Antonio Moreno
+                </td>
+                <td>
+                    M&eacute;xico D.F.
+                </td>
+                <td class="country mexico">
+                    Mexico
+                </td>
+                <td>
+                    <input type="checkbox" checked disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Thomas Hardy
+                </td>
+                <td>
+                    London
+                </td>
+                <td class="country uk">
+                    UK
+                </td>
+                <td>
+                    <input type="checkbox" disabled/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>

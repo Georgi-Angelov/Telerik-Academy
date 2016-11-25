@@ -1,7 +1,11 @@
+body
+{
+    
+    font-family: Arial;
+}
 table {
     background-color: #595959;
-    font-family: 'Arial';
-    color: #B4AC9D;
+    color: #ccc;
 }
 
 table th {
@@ -15,15 +19,22 @@ table td {
     padding: 7px;
     vertical-align: top;
 }
-
+span.circle 
+{
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    background-color: #71b47a;
+}
 table tr td:first-child {
     color: #ffffff;
     font-style: italic;
     padding-right: 20px;
 }
 
-a {
-    color: #DCCF88; 
+a
+{
+    color: #f3f6ac;
     text-decoration: none;
 }
 img {
@@ -34,9 +45,9 @@ img {
 #inactiveSupport {
     font-weight: 500;
     vertical-align: top;
-    color: #DE1720;
+    color: red;
 }
 
 span.notAnswered {
-    color: #BF6A1F;
+    color: orange;
 }

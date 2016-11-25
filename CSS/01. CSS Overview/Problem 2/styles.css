@@ -1,27 +1,49 @@
-table {
-    border-collapse: collapse;
-    width: 456px;
-    height: 133px;
+table
+{
+    border-collapse:collapse;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    font-size: 12px;
 }
-
-th, td {
-    text-align: left;
-    padding: 8px;
-    width: 110px;
-    height: 30px;
+thead
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ec306), color-stop(100%,#50b406));
+    background: -moz-linear-gradient(top, #5ec306 0%, #50b406 100%);
+    background: -o-linear-gradient(top, #5ec306 0%,#50b406 100%); 
+    background: -webkit-linear-gradient(top, #5ec306 0%,#50b406 100%);
+    background: linear-gradient(to bottom, #5ec306 0%,#50b406 100%);
+    background: -ms-linear-gradient(top, #5ec306 0%,#50b406 100%);
+    background: #5ec306; 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ec306', endColorstr='#50b406',GradientType=0 );
+    
+    color: #fff;
 }
-
-tr:nth-child(even){background-color: #ECECD8}
-
-th {
-    background-color: #4CAF50;
-    color: white;
+.firstCol, .secondCol, .thirdCol
+{
+    width: 145px;
 }
-#grad1 {
-    height: 200px;
-    background: #59BD06; 
-    background: -webkit-linear-gradient(#59BD06, #47A803); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#59BD06, #47A803); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#59BD06, #47A803); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#59BD06, #47A803); /* Standard syntax always last! */
+td
+{
+    padding: 7px;
+    border: 1px solid #b5b5b5;
+}
+table tr:nth-child(2n)
+{
+    background-color: #efefef;
+}
+td.country
+{
+    padding-left: 33px;
+}
+td.country.germany
+{
+    background: url("germany.png") no-repeat 3px;
+}
+td.country.mexico
+{
+    background: url("mexico.png") no-repeat 3px;
+}
+td.country.uk
+{
+    background: url("uk.png") no-repeat 3px;
 }
