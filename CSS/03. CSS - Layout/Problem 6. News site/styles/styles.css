@@ -35,16 +35,16 @@ a {
 .tab { float: left; }
 
 .tab-title a {
-    display: block;
-    padding: 5px 15px;
+    display: inline;
+    padding: 100% 15px 15px 31px;
     background: #4B5F67;
     color: #93ACB6;
 }
 .tab:not(:last-child) .tab-title a { border-right: 1px solid #1E3741; }
 
 .tab-title a {
-    position: relative;
-    z-index: 1;
+        z-index: 1;
+        
 }
 .tab:first-child .tab-title a::after {
     position: absolute;
@@ -58,7 +58,6 @@ a {
 }
 
 .tab-content {
-    top: 28px;
     left: 0;
     width: 100%;
 }
