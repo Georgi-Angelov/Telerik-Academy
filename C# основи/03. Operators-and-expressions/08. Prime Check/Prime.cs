@@ -21,7 +21,7 @@ namespace _08.Prime_Check
                 }
                 else
                 {
-                    for (int a = 2; a <= prime / 2; a++)
+                    for (int a = 2; a * a <= prime; a++)
                     {
                         if ( prime % a == 0)
                         {
